@@ -2,6 +2,10 @@
 RST Sample File
 =============
 
+.. raw:: html
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
 - `Go to page 1 <index.html>`_
 - `Go to page 2 <2.html>`_
 - `Go to RST file content <rstFile.html>`_
