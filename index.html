@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tags Page 1</title>
+</head>
+<body>
+    <menu>
+        <li><a href="2.html">Go to Page 2</a></li>
+        <li><a href="rstFile.html">Go to RST file content</a></li>
+        <li><a href="rstFileOutput.html">Go to RST file output</a></li>
+    </menu>
+
+    <h1>HTML Tags Page 1</h1>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Tag</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Fieldset</td>
+            <td>The fieldset tag is used to group related elements in a form.</td>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        Name: <input type="text"><br><br>
+                        Email: <input type="email"><br><br>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Iframe</td>
+            <td>The iframe tag is used to embed another document within the current HTML document.</td>
+            <td>
+                <iframe src="https://www.example.com" width="600" height="400"></iframe>
+            </td>
+        </tr>
+        <tr>
+            <td>Picture</td>
+            <td>The picture tag is used to specify multiple sources for an image.</td>
+            <td>
+                <picture>
+                    <source media="(min-width: 650px)" srcset="img/download.png">
+                    <source media="(min-width: 465px)" srcset="img/download.png">
+                    <img src="img/download.png" alt="A picture">
+                </picture>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
