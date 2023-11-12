@@ -1,91 +1,86 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
     padding: 0;
 }
 
-menu {
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin-bottom: 20px;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
 }
 
-menu li {
-    margin-right: 20px;
-}
-
-menu li:last-child {
-    margin-right: 0;
-}
-
-menu li a {
-    text-decoration: none;
-    padding: 8px 12px;
-    color: #333;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-menu li a:hover {
-    background-color: #f4f4f4;
+nav {
+    background-color: #f0f0f0;
+    padding: 1em;
 }
 
 ul {
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin-bottom: 20px;
     list-style-type: none;
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-ul li {
+li {
+    display: block;
     margin-right: 20px;
 }
 
-ul li:last-child {
-    margin-right: 0;
-}
-
-ul li a {
+a {
     text-decoration: none;
-    padding: 8px 12px;
     color: #333;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    font-weight: bold;
 }
 
-ul li a:hover {
-    background-color: #f4f4f4;
+section {
+    margin: 20px;
 }
 
-h1 {
+h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+p {
+    line-height: 1.6;
 }
 
-th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 12px;
+.menuUl li {
+    display: inline;
+    margin-right: 20px;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+@media only screen and (max-width: 600px) {
+    nav {
+        text-align: center;
+    }
+
+    li {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
 
-.section
-{
-    text-align: center;
+/* Print styles */
+@media print {
+    body {
+        font-size: 12pt;
+    }
+
+    header {
+        background-color: #fff;
+        color: #000;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section {
+        margin: 10px 0;
+    }
 }
