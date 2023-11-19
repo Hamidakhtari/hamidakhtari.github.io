@@ -11,7 +11,6 @@
             border: 1px solid #ddd;
             padding: 20px;
             margin-bottom: 20px;
-            margin-top: 20px;
         }
 
         .example-output {
@@ -32,7 +31,7 @@
         <h1>CSS Guide</h1>
     </header>
     <nav>
-        <ul class = "menuUl">
+        <ul class="menuUl">
             <li><a href="index.html">Home</a></li>
             <li><a href="html.html">HTML</a></li>
             <li><a href="css.html">CSS</a></li>
@@ -40,121 +39,120 @@
         </ul>
     </nav>
 
-    <section>
+    <section class="introduction">
         <h2>Introduction to CSS</h2>
         <p>CSS, which stands for Cascading Style Sheets, is a style sheet language used for describing the presentation of a document written in HTML. CSS controls the layout, appearance, and design of web pages.</p>
     </section>
-
-    <section>
-        <h2>Basic CSS Syntax</h2>
-        <p>CSS rules are made up of a selector and a declaration block. The selector identifies the HTML element, and the declaration block contains one or more declarations separated by semicolons.</p>
-        <pre>
-            <code>
-                selector {
-                    property: value;
-                }
-            </code>
-        </pre>
-        <div class="example-container">
-            <h3>Example: Basic CSS Syntax</h3>
-            <div class="example-output">
-                <p>This is a paragraph styled using the following CSS:</p>
-                <pre>
-                    <code>
-                        p {
-                            color: #333;
-                            font-size: 1.2em;
-                            margin-bottom: 10px;
-                        }
-                    </code>
-                </pre>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Common CSS Properties</h2>
-        <p>Let's explore some common CSS properties:</p>
-        <ul>
-            <li><strong>color</strong> - Text color</li>
-            <li><strong>font-size</strong> - Font size</li>
-            <li><strong>margin</strong> - Outer spacing</li>
-            <li><strong>padding</strong> - Inner spacing</li>
-            <li><strong>background-color</strong> - Background color</li>
-            <li><strong>border</strong> - Border</li>
-            <li><strong>width</strong> and <strong>height</strong> - Width and height of an element</li>
-            <li><strong>text-align</strong> - Text alignment</li>
-        </ul>
     
-        <div class="example-container">
-            <h3>Example: Common CSS Properties</h3>
-            <div class="example-output">
-                <p>This is a paragraph styled using the following CSS:</p>
-                <pre>
-                    <code>
-                        p {
-                            color: #333;
-                            font-size: 1.2em;
-                            margin: 10px;
-                            padding: 15px;
-                            background-color: #f0f0f0;
-                            border: 1px solid #ddd;
-                            width: 300px;
-                            text-align: center;
-                        }
-                    </code>
-                </pre>
-            </div>
-        </div>
-    </section>
+    <section class="grid-container">
+        
 
-    <section>
-        <h2>Example: Styling a Heading</h2>
-        <p>Let's style a heading using CSS:</p>
-        <pre>
-            <code>
-                h1 {
-                    color: #4CAF50;
-                    font-size: 2em;
-                    text-align: center;
-                    margin-bottom: 20px;
-                }
-            </code>
-        </pre>
-        <div class="example-container">
-            <h3>Example: Styling a Heading</h3>
-            <div class="example-output">
-                <h1>This is a styled heading</h1>
+        <section class="basic-syntax">
+            <h2>Basic CSS Syntax</h2>
+            <p>CSS rules are made up of a selector and a declaration block. The selector identifies the HTML element, and the declaration block contains one or more declarations separated by semicolons.</p>
+            <pre>
+                <code>
+selector 
+{
+    property: value;
+}
+                </code>
+            </pre>
+            <div class="example-container">
+                <h3>Example: Basic CSS Syntax</h3>
+                <div class="example-output">
+                    <p>This is a paragraph styled using the following CSS:</p>
+                    <pre>
+                        <code>
+p
+{
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+                        </code>
+                    </pre>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>CSS Selectors</h2>
-        <p>CSS selectors define which elements a style rule will apply to. Here are some common selectors:</p>
-        <ul>
-            <li><strong>Element Selector:</strong> <code>p</code> - Selects all paragraphs</li>
-            <li><strong>Class Selector:</strong> <code>.example</code> - Selects all elements with class "example"</li>
-            <li><strong>ID Selector:</strong> <code>#header</code> - Selects the element with id "header"</li>
-            <li><strong>Descendant Selector:</strong> <code>ul li</code> - Selects all list items within unordered lists</li>
-        </ul>
-    
-        <div class="example-container">
-            <h3>Example: CSS Selectors</h3>
-            <div class="example-output">
-                <p>This is a paragraph with class <span class = "example"> "example" </span> selected using the following CSS:</p>
-                <pre>
-                    <code>
-                        .example {
-                            color: #4CAF50;
-                            font-weight: bold;
-                        }
-                    </code>
-                </pre>
+        <section class="common-properties">
+            <h2>Common CSS Properties</h2>
+            <p>Let's explore some common CSS properties:</p>
+            <ul>
+                <li><strong>color</strong> - Text color</li>
+                <!-- Other list items -->
+            </ul>
+        
+            <div class="example-container">
+                <h3>Example: Common CSS Properties</h3>
+                <div class="example-output">
+                    <p>This is a paragraph styled using the following CSS:</p>
+                    <pre>
+                        <code>
+p
+{
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    width: 300px;
+    text-align: center;
+}
+                        </code>
+                    </pre>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="heading-style">
+            <h2>Example: Styling a Heading</h2>
+            <p>Let's style a heading using CSS:</p>
+            <pre>
+                <code>
+h1
+{
+    color: #4CAF50;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+                </code>
+            </pre>
+            <div class="example-container">
+                <h3>Example: Styling a Heading</h3>
+                <div class="example-output">
+                    <h1>This is a styled heading</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="selectors">
+            <h2>CSS Selectors</h2>
+            <p>CSS selectors define which elements a style rule will apply to. Here are some common selectors:</p>
+            <ul>
+                <!-- List items -->
+            </ul>
+        
+            <div class="example-container">
+                <h3>Example: CSS Selectors</h3>
+                <div class="example-output">
+                    <p>This is a paragraph with class <span class="example"> "example" </span> selected using the following CSS:</p>
+                    <pre>
+                        <code>
+.example
+{
+    color: #4CAF50;
+    font-weight: bold;
+}
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </section>
     </section>
-    
 
 </body>
 </html>

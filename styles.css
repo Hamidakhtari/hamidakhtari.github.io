@@ -54,6 +54,44 @@ p {
     margin-right: 20px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+footer.footer-grid {
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-grid div {
+    padding: 5px;
+}
+
+.name {
+    grid-column: 1 / 2;
+}
+
+.rights {
+    grid-column: 2 / 3;
+}
+
+.id {
+    grid-column: 3 / 3;
+}
+
+
 @media only screen and (max-width: 600px) {
     nav {
         text-align: center;
@@ -62,6 +100,9 @@ p {
     li {
         display: block;
         margin-bottom: 10px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -82,5 +123,14 @@ p {
 
     section {
         margin: 10px 0;
+    }
+    .grid-container {
+        display: block;
+    }
+
+    .grid-item {
+        border: none;
+        padding: 0;
+        margin-bottom: 20px;
     }
 }
