@@ -1,94 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Guide</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>HTML Guide</h1>
-    </header>
-    <nav>
-        <ul class = "menuUl">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="html.html">HTML</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li><a href="examples.html">Examples</a></li>
-        </ul>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Guide</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>HTML Guide</h1>
+        </header>
+        <nav>
+            <ul class = "menuUl">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="examples.html">Examples</a></li>
+            </ul>
+        </nav>
 
-    <section>
-        <h2>Introduction to HTML</h2>
-        <p>HTML, which stands for HyperText Markup Language, is the standard markup language for creating web pages. It provides a structure for content on the web. HTML uses tags to define elements, and each tag has a specific purpose.</p>
-    </section>
-
-
-    <main class="grid-container">
         <section>
-            <h2>Basic HTML Document Structure</h2>
-            <p>Every HTML document follows a basic structure:</p>
+            <h2>Introduction to HTML</h2>
+            <p>HTML, which stands for HyperText Markup Language, is the standard markup language for creating web pages. It provides a structure for content on the web. HTML uses tags to define elements, and each tag has a specific purpose.</p>
+        </section>
+
+
+        <main class="grid-container">
+            <section>
+                <h2>Basic HTML Document Structure</h2>
+                <p>Every HTML document follows a basic structure:</p>
+                <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Your content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Common HTML Tags</h2>
+                <p>Let's explore some common HTML tags:</p>
+                <ul>
+                    <li>&lt;h1&gt; to &lt;h6&gt; - Headings</li>
+                    <li>&lt;p&gt; - Paragraph</li>
+                    <li>&lt;a&gt; - Anchor (Link)</li>
+                    <li>&lt;img&gt; - Image</li>
+                    <li>&lt;ul&gt; and &lt;li&gt; - Unordered List</li>
+                    <li>&lt;ol&gt; and &lt;li&gt; - Ordered List</li>
+                    <li>&lt;div&gt; - Division/Container</li>
+                    <li>&lt;span&gt; - Inline Container</li>
+                </ul>
+            </section>
+        </main>
+
+        <section>
+            <h2>Example: Creating a Simple Web Page</h2>
+            <p>Let's create a simple HTML page with a heading, paragraph, and a link:</p>
             <pre>
                 <code>
-                    &lt;!DOCTYPE html&gt;
-                    &lt;html lang="en"&gt;
-                    &lt;head&gt;
-                        &lt;meta charset="UTF-8"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                        &lt;title&gt;Your Page Title&lt;/title&gt;
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                        &lt;!-- Your content goes here --&gt;
-                    &lt;/body&gt;
-                    &lt;/html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My First Web Page&lt;/h1&gt;
+    &lt;p&gt;This is a simple web page created using HTML.&lt;/p&gt;
+    &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
                 </code>
             </pre>
         </section>
 
-        <section>
-            <h2>Common HTML Tags</h2>
-            <p>Let's explore some common HTML tags:</p>
-            <ul>
-                <li>&lt;h1&gt; to &lt;h6&gt; - Headings</li>
-                <li>&lt;p&gt; - Paragraph</li>
-                <li>&lt;a&gt; - Anchor (Link)</li>
-                <li>&lt;img&gt; - Image</li>
-                <li>&lt;ul&gt; and &lt;li&gt; - Unordered List</li>
-                <li>&lt;ol&gt; and &lt;li&gt; - Ordered List</li>
-                <li>&lt;div&gt; - Division/Container</li>
-                <li>&lt;span&gt; - Inline Container</li>
-            </ul>
-        </section>
-    </main>
+        <footer class="footer-grid">
+            <div class="name">Hamid Akhtari</div>
+            <div class="rights">© 2023 Web Development Guide. All Rights Reserved.</div>
+            <div class="id">9721160002</div>
+        </footer>
+        <script src="menuHighlight.js"></script>
 
-    <section>
-        <h2>Example: Creating a Simple Web Page</h2>
-        <p>Let's create a simple HTML page with a heading, paragraph, and a link:</p>
-        <pre>
-            <code>
-                &lt;!DOCTYPE html&gt;
-                &lt;html lang="en"&gt;
-                &lt;head&gt;
-                    &lt;meta charset="UTF-8"&gt;
-                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                    &lt;title&gt;My First Web Page&lt;/title&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;h1&gt;Welcome to My First Web Page&lt;/h1&gt;
-                    &lt;p&gt;This is a simple web page created using HTML.&lt;/p&gt;
-                    &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-            </code>
-        </pre>
-    </section>
-
-    <footer class="footer-grid">
-        <div class="name">Hamid Akhtari</div>
-        <div class="rights">© 2023 Web Development Guide. All Rights Reserved.</div>
-        <div class="id">9721160002</div>
-    </footer>
-
-</body>
+    </body>
 </html>

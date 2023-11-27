@@ -1,141 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Examples</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Code Examples</h1>
-    </header>
-    <nav>
-        <ul class = "menuUl">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="html.html">HTML</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li><a href="examples.html">Examples</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <h2>Practical HTML Examples</h2>
-        <p>Explore real-world examples of HTML usage:</p>
-
-        <div class="example-container">
-            <h3>Example 1: Creating a Basic Web Page</h3>
-            <div class="example-output">
-                <!-- HTML code for a basic web page -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript onClick Example</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript onClick Example</h1>
+        </header>
+        <nav>
+            <ul class="menuUl">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="examples.html">Examples</a></li>
+            </ul>
+        </nav>
+        
+        <section class="grid-container">
+            <div class="grid-item">
+                <h2>JavaScript Code Explaining 'onClick'</h2>
                 <pre>
                     <code>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
-                            &lt;meta charset="UTF-8"&gt;
-                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                            &lt;title&gt;My First Web Page&lt;/title&gt;
-                        &lt;/head&gt;
-                        &lt;body&gt;
-                            &lt;h1&gt;Welcome to My First Web Page&lt;/h1&gt;
-                            &lt;p&gt;This is a simple web page created using HTML.&lt;/p&gt;
-                            &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+function toggleMessage()
+{
+    var output = document.getElementById('output');
+    var button = document.getElementById('toggleButton');
+    
+    if (output.style.display === 'none' || output.innerText === '') {
+        output.style.display = 'block';
+        output.innerText = 'Hello, you clicked the button!';
+        button.innerText = 'Hide Message';
+    } else {
+        output.style.display = 'none';
+        output.innerText = '';
+        button.innerText = 'Show Message';
+    }
+}
                     </code>
                 </pre>
             </div>
-        </div>
-
-        <div class="example-container">
-            <h3>Example 2: Creating an Unordered List</h3>
-            <div class="example-output">
-                <!-- HTML code for an unordered list -->
-                <pre>
-                    <code>
-                        &lt;ul&gt;
-                            &lt;li&gt;Item 1&lt;/li&gt;
-                            &lt;li&gt;Item 2&lt;/li&gt;
-                            &lt;li&gt;Item 3&lt;/li&gt;
-                        &lt;/ul&gt;
-                    </code>
-                </pre>
+            
+            <div class="grid-item">
+                <h2>Output</h2>
+                <button id="toggleButton" onclick="toggleMessage()">Show Message</button>
+                <p id="output" style="display: none;"></p>
             </div>
-        </div>
-
-        <div class="example-container">
-            <h3>Example 3: Adding an Image</h3>
-            <div class="example-output">
-                <!-- HTML code for adding an image -->
-                <pre>
-                    <code>
-                        &lt;img src="example.jpg" alt="Example Image"&gt;
-                    </code>
-                </pre>
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-        <h2>Practical CSS Examples</h2>
-        <p>Explore real-world examples of CSS styling:</p>
-
-        <div class="example-container">
-            <h3>Example 1: Styling Text</h3>
-            <div class="example-output">
-                <!-- CSS code for styling text -->
-                <pre>
-                    <code>
-                        p {
-                            color: #333;
-                            font-size: 1.2em;
-                            margin: 10px;
-                        }
-                    </code>
-                </pre>
-            </div>
-        </div>
-
-        <div class="example-container">
-            <h3>Example 2: Styling a Button</h3>
-            <div class="example-output">
-                <!-- CSS code for styling a button -->
-                <pre>
-                    <code>
-                        button {
-                            background-color: #4CAF50;
-                            color: white;
-                            padding: 10px;
-                            border: none;
-                            border-radius: 5px;
-                            cursor: pointer;
-                        }
-                    </code>
-                </pre>
-            </div>
-        </div>
-
-        <div class="example-container">
-            <h3>Example 3: Creating a Box with Border</h3>
-            <div class="example-output">
-                <!-- CSS code for creating a box with border -->
-                <pre>
-                    <code>
-                        .box {
-                            width: 200px;
-                            height: 150px;
-                            background-color: #f0f0f0;
-                            border: 2px solid #333;
-                            padding: 10px;
-                            margin: 20px;
-                        }
-                    </code>
-                </pre>
-            </div>
-        </div>
-
-    </section>
-
-</body>
+            
+            <script>
+                function toggleMessage() {
+                    var output = document.getElementById('output');
+                    var button = document.getElementById('toggleButton');
+                    
+                    if (output.style.display === 'none' || output.innerText === '') {
+                        output.style.display = 'block';
+                        output.innerText = 'Hello, you clicked the button!';
+                        button.innerText = 'Hide Message';
+                    } else {
+                        output.style.display = 'none';
+                        output.innerText = '';
+                        button.innerText = 'Show Message';
+                    }
+                }
+            </script>
+        </section>
+        <script src="menuHighlight.js"></script>
+    </body>
 </html>
