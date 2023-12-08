@@ -48,24 +48,79 @@ function toggleMessage()
                 <button id="toggleButton" onclick="toggleMessage()">Show Message</button>
                 <p id="output" style="display: none;"></p>
             </div>
-            
-            <script>
-                function toggleMessage() {
-                    var output = document.getElementById('output');
-                    var button = document.getElementById('toggleButton');
+
+            <div class="grid-item">
+                <h2>Enter Key-Value Pair</h2>
+                <form id="keyValueForm">
+                    <label for="key">Key:</label>
+                    <input type="text" id="key" name="key" required><br><br>
                     
-                    if (output.style.display === 'none' || output.innerText === '') {
-                        output.style.display = 'block';
-                        output.innerText = 'Hello, you clicked the button!';
-                        button.innerText = 'Hide Message';
-                    } else {
-                        output.style.display = 'none';
-                        output.innerText = '';
-                        button.innerText = 'Show Message';
+                    <label for="value">Value:</label>
+                    <input type="text" id="value" name="value" required><br><br>
+                    
+                    <button type="button" onclick="addKeyValuePair()">Add Key-Value Pair</button>
+                </form>
+                
+                <div id="displayKeyValue" >
+                    <!-- Key-value pairs will be displayed here -->
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer-grid">
+            <div class="name">Hamid Akhtari</div>
+            <div class="rights">© 2023 Web Development Guide. All Rights Reserved.</div>
+            <div class="id">9721160002</div>
+        </footer>
+
+        <script>
+            function addKeyValuePair() {
+                var keyInput = document.getElementById('key').value.trim();
+                var valueInput = document.getElementById('value').value.trim();
+                
+                var displayDiv = document.getElementById('displayKeyValue');
+        
+                if (keyInput === '' || valueInput === '') {
+                    alert("Please enter both a key and a value.");
+                    return;
+                }
+        
+                var existingKeys = displayDiv.querySelectorAll('p');
+                for (var i = 0; i < existingKeys.length; i++) {
+                    var existingKey = existingKeys[i].innerText.split(' : ')[1].split(',')[0].trim();
+                    if (existingKey === keyInput) {
+                        alert("Key already exists. Please enter a different key.");
+                        return;
                     }
                 }
-            </script>
-        </section>
+        
+                var paragraph = document.createElement('p');
+                var text = document.createTextNode('Key : ' + keyInput + ', Value : ' + valueInput);
+                
+                paragraph.appendChild(text);
+                displayDiv.appendChild(paragraph);
+            }
+        </script>
+        
+        
+        <script>
+            function toggleMessage() {
+                var output = document.getElementById('output');
+                var button = document.getElementById('toggleButton');
+                
+                if (output.style.display === 'none' || output.innerText === '') {
+                    output.style.display = 'block';
+                    output.innerText = 'Hello, you clicked the button!';
+                    button.innerText = 'Hide Message';
+                } else {
+                    output.style.display = 'none';
+                    output.innerText = '';
+                    button.innerText = 'Show Message';
+                }
+            }
+        </script>
+</section>
         <script src="menuHighlight.js"></script>
     </body>
 </html>
